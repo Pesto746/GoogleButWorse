@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google But Worse</title>
     <style>
+        /* General page styling */
         body {
             background-color: black; /* Set background to black */
             text-align: center; /* Center everything */
@@ -19,6 +20,46 @@
             display: inline-block; /* Keeps search bar centered */
             width: 100%; /* Allows responsiveness */
             max-width: 500px; /* Limits search bar width */
+        }
+
+        /* Override Google CSE styles */
+        /* Ensure the search box input is styled correctly */
+        input.gsc-input {
+            background-color: black !important; /* Black search bar */
+            color: white !important; /* White text */
+            border: 1px solid white !important; /* White border */
+        }
+
+        /* Style the dropdown search suggestions */
+        .gsc-completion-container {
+            background-color: black !important; /* Black background */
+        }
+
+        /* Style the text in the search suggestions */
+        .gsc-completion-title {
+            color: white !important; /* White text */
+        }
+
+        /* Style the descriptions under suggestions */
+        .gsc-completion-snippet {
+            color: gray !important; /* Gray for contrast */
+        }
+
+        /* Ensure search results also match the theme */
+        .gsc-results .gsc-thumbnail-inside, 
+        .gsc-results .gs-title,
+        .gsc-results .gs-snippet {
+            background-color: black !important;
+            color: white !important;
+        }
+
+        /* Make the search button stand out */
+        button.gsc-search-button {
+            background-color: white !important;
+            color: black !important;
+            border: none !important;
+            padding: 5px 10px;
+            cursor: pointer;
         }
     </style>
 </head>
