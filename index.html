@@ -4,18 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google But Worse</title>
+    <style>
+        body {
+            background-color: black; /* Set background to black */
+            text-align: center; /* Center everything */
+            color: white; /* Set text color to white */
+            font-family: Arial, sans-serif; /* Improve font */
+        }
+        img {
+            width: 200px; /* Adjust image size */
+            margin-bottom: 20px; /* Add space below image */
+        }
+        .gcse-search {
+            display: inline-block; /* Keeps search bar centered */
+            width: 100%; /* Allows responsiveness */
+            max-width: 500px; /* Limits search bar width */
+        }
+    </style>
 </head>
 <body>
+
+    <!-- Logo (Centered Above Search Bar) -->
+    <img src="https://pesto746.github.io/GoogleButWorse/images/logo.jpg" alt="Logo">
 
     <!-- Google Custom Search Engine -->
     <script async src="https://cse.google.com/cse.js?cx=3000f84d933e44431"></script>
     <div class="gcse-search"></div>
-
-    <!-- Updated Image Path -->
-    <img src="https://pesto746.github.io/GoogleButWorse/images/logo.jpg" 
-         alt="Logo" 
-         width="200" 
-         onerror="this.onerror=null; this.src='fallback.jpg';">
 
 </body>
 </html>
