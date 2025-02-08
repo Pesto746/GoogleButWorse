@@ -44,21 +44,38 @@
             color: gray !important; /* Gray for contrast */
         }
 
-        /* Ensure search results also match the theme */
-        .gsc-results .gsc-thumbnail-inside, 
-        .gsc-results .gs-title,
-        .gsc-results .gs-snippet {
+        /* Add black highlight when hovering or selecting search suggestions */
+        .gsc-completion-container .gsc-completion-selected {
+            background-color: #222 !important; /* Darker black highlight */
+        }
+
+        /* Make search results background black */
+        .gsc-results-wrapper-visible, 
+        .gsc-webResult, 
+        .gsc-result {
             background-color: black !important;
             color: white !important;
         }
 
-        /* Make the search button stand out */
-        button.gsc-search-button {
-            background-color: white !important;
-            color: black !important;
+        /* Style search result titles */
+        .gs-title, .gs-title * {
+            color: #4da6ff !important; /* Light blue for clickable links */
+        }
+
+        /* Style search result descriptions */
+        .gs-snippet {
+            color: white !important;
+        }
+
+        /* Remove the custom search button styling (restore default Google icon) */
+        .gsc-search-button {
+            background: none !important;
             border: none !important;
-            padding: 5px 10px;
-            cursor: pointer;
+        }
+
+        .gsc-search-button-v2 {
+            background: none !important;
+            border: none !important;
         }
     </style>
 </head>
